@@ -216,7 +216,7 @@ class CustomMapMarkerBuilder {
         );
       }
 
-      if (!renderObject.debugNeedsPaint) {
+      if (renderObject.attached && renderObject.hasSize) {
         return renderObject;
       }
 
